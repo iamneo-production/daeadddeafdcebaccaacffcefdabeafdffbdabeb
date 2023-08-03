@@ -1,10 +1,11 @@
-const filterOdd = (...numbers) =>{
-    return numbers.filter(num => num % 2 !== 0);
+export const filterOdd(...arr)=>
+{
+    let ans=[];
+    arr.forEach(ele=>{
+        if(ele%2!=0){
+            ans.push(ele);
+        }
+    });
+    return ans;
 }
-
-const filterEven = (...numbers) =>{return numbers.filter(num => num % 2 === 0);}
-
-const generateRandomList = (n = 7) =>{return Array.from({length: n}, () => Math.floor(Math.random() * 100) + 1);
-}
-
-export {filterOdd, filterEven, generateRandomList}
+export const filterEven=(...arr)
