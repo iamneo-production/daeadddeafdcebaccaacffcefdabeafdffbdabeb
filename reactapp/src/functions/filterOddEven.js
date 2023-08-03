@@ -1,28 +1,10 @@
-export const filterOdd=(...arr)=>
-{
-    let ans=[];
-    arr.forEach(ele=>{
-        if(ele%2!=0){
-            ans.push(ele);
-        }
-    });
-    return ans;
+const filterOdd = (...numbers) =>{
+    return numbers.filter(num => num % 2 !== 0);
 }
-export const filterEven=(...arr)=>
-{
-    let ans=[];
-    arr.forEach(ele=>{
-        if(ele%2==0){
-            ans.push(ele);
-        }
-    });
-    return ans;
+
+const filterEven = (...numbers) =>{return numbers.filter(num => num % 2 === 0);}
+
+const generateRandomList = (n = 7) =>{return Array.from({length: n}, () => Math.floor(Math.random() * 100) + 1);
 }
-export const generateRandomList=(n=7)=>
-{
-    let res=[];
-    for(let i=0;i<n;i++){
-        res.push(Math.floor(Math.random()*100));
-    }
-    return res;
-}
+
+export{filterOdd, filterEven, generateRandomList}
