@@ -1,10 +1,10 @@
 export function filterOdd(...elements) {
     return elements.filter((x) => x % 2 !== 0);
- }
+  }
   
   export function filterEven(...elements) {
     return elements.filter((x) => x % 2 === 0);
- }
+  }
     
   export function generateRandomList(n = 7) {
     let a = [];
@@ -13,4 +13,4 @@ export function filterOdd(...elements) {
       a.push(x);
     }
     return a;
- }
+  }
