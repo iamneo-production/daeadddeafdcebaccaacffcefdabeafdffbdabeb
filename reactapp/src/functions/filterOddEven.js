@@ -11,6 +11,6 @@ export function filterOdd(...elements) {
     for (let i = 0; i < n; i++){
       let x = Math.floor(Math.random() * 100 + 1);
       a.push(x);
-  }
+    }
     return a;
   }
